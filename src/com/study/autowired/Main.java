@@ -1,4 +1,4 @@
-package com.study;
+package com.study.autowired;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 public class Main {
 
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        Class<?> clazz = Class.forName("com.study.Presenter");
+        Class<?> clazz = Class.forName("com.study.autowired.Presenter");
         Object leftSide = clazz.getDeclaredConstructor().newInstance();
         Field[] fields = clazz.getDeclaredFields();
         for (Field field : fields) {

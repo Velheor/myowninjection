@@ -1,4 +1,4 @@
-package com.study;
+package com.study.autowired;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
